@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  box-shadow: none !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  line-height: 1 !important;
+}
+.main {
+  width: 95%;
+}
+.drawerLogo {
+  width: 50%;
+}
+@media (max-width: 899px) {
+  .footerI {
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+  .appl {
+    margin-right: 0px !important;
+  }
+  .navbar-hide {
+    display: none !important;
+  }
+  .logo {
+    width: 15% !important;
+  }
+  .header {
+    margin: 50px 0 !important;
+  }
+  .types {
+    flex-direction: column-reverse !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .restore {
+    font-size: 30px !important;
+  }
+  .learn {
+    width: 50% !important;
+  }
+}
+@media (max-width: 385px) {
+  .learn {
+    display: none !important;
   }
 }
