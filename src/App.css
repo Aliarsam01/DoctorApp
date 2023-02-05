@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: none !important;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  box-shadow: none !important;
+}
+.css-ahj2mt-MuiTypography-root {
+  line-height: 1 !important;
+}
+.main {
+  width: 95%;
+}
+.drawerLogo {
+  width: 50%;
+}
+@media (max-width: 899px) {
+  .footerI {
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+  .appl {
+    margin-right: 0px !important;
+  }
+  .navbar-hide {
+    display: none !important;
+  }
+  .logo {
+    width: 15% !important;
+  }
+  .header {
+    margin: 50px 0 !important;
+  }
+  .types {
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  .restore {
+    font-size: 30px !important;
+  }
+  .learn {
+    width: 50% !important;
+  }
+}
+@media (max-width: 385px) {
+  .learn {
+    display: none !important;
+  }
+}
