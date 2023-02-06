@@ -32,118 +32,140 @@ const box = [
 function Individuals() {
   return (
     <>
-      <Grid container sx={{ paddingTop: "150px" }}>
-        <Grid item xs={2} md={4}></Grid>
-        <Grid item xs={8} md={4} sx={{ position: "relative" }}>
-          <img src={Rect} style={{ position: "absolute" }} />
+      <Container>
+        <Grid container sx={{ paddingTop: "150px" }}>
+          <Grid item xs={2} sm={4} md={4}></Grid>
+          <Grid item xs={8} sm={4} md={4} sx={{ position: "relative" }}>
+            <img src={Rect} style={{ position: "absolute" }} />
 
-          <Typography
-            className="restore"
-            sx={{
-              fontWeight: "bold",
-              fontSize: "45px",
-              fontFamily: "'Poppins', sans-serif",
-              marginLeft: "10px",
-            }}
-          >
-            For Individuals
-            <img src={Light} style={{ position: "absolute", top: "-15px" }} />
-          </Typography>
-          <img style={{ display: "block", margin: "auto" }} src={Vec} />
-        </Grid>
-        <Grid item xs={2} md={4}></Grid>
-      </Grid>
-
-      <Grid container sx={{ display: "flex", justifyContent: "space-around" }}>
-        <Grid item xs={12} sx={{ paddingTop: "15px" }}>
-          <Typography
-            sx={{
-              fontFamily: "'Poppins', sans-serif",
-              color: "#787C7E",
-              fontSize: "13px",
-              textAlign: "center",
-            }}
-          >
-            Mix & match different services to create a unique program tailored
-            for you
-          </Typography>
-        </Grid>
-
-        {box.map((user) => (
-          <Grid
-            item
-            xs={10}
-            md={3}
-            sx={{
-              background: "#FFF4E3",
-              padding: "20px",
-              marginTop: "60px",
-              borderRadius: "20px",
-              "&:hover": {
-                cursor: "pointer",
-                background: "#2EB1BE",
-              },
-            }}
-          >
-            <img style={{ width: "100%" }} src={user.img} />
             <Typography
+              className="headingIn"
               sx={{
-                fontWeight: "600",
+                fontWeight: "bold",
+                fontSize: "45px",
                 fontFamily: "'Poppins', sans-serif",
-                padding: "25px 0",
-                color: "#282828",
-                fontSize: "20px",
-                "&:hover": {
-                  color: "white",
-                },
+                marginLeft: "10px",
               }}
             >
-              {user.health}
+              For Individuals
+              <img
+                className="exLight"
+                src={Light}
+                style={{ position: "absolute", top: "-15px" }}
+              />
             </Typography>
+            <img
+              className="indVec"
+              style={{ display: "block", margin: "auto" }}
+              src={Vec}
+            />
+          </Grid>
+          <Grid item xs={2} sm={4} md={4}></Grid>
+        </Grid>
+
+        <Grid
+          container
+          sx={{ display: "flex", justifyContent: "space-around" }}
+        >
+          <Grid item xs={12} sx={{ paddingTop: "15px" }}>
             <Typography
               sx={{
-                fontWeight: "600",
                 fontFamily: "'Poppins', sans-serif",
-                padding: "5px 0",
                 color: "#787C7E",
-                fontSize: "14px",
-                "&:hover": {
-                  color: "white",
-                },
+                fontSize: "13px",
+                textAlign: "center",
               }}
             >
-              {user.para}
+              Mix & match different services to create a unique program tailored
+              for you
             </Typography>
           </Grid>
-        ))}
-      </Grid>
 
-      <Grid container sx={{ paddingTop: "150px" }}>
-        <Grid item xs={1} md={1}></Grid>
-        <Grid item xs={10} md={10} sx={{ position: "relative" }}>
-          <img src={Rect} style={{ position: "absolute" }} />
-
-          <Typography
-            className="restore"
-            sx={{
-              fontWeight: "bold",
-              fontSize: "45px",
-              fontFamily: "'Poppins', sans-serif",
-              marginLeft: "10px",
-            }}
-          >
-            Visualise your health with personalised health analytics and Al
-            Powered scores.
-            <img
-              src={Light}
-              style={{ position: "absolute", top: "-15px", right: "0px" }}
-            />
-          </Typography>
-          <img style={{ display: "block", margin: "auto" }} src={Vec} />
+          {box.map((user) => (
+            <Grid
+              item
+              xs={12}
+              sm={3.8}
+              md={3.8}
+              sx={{
+                background: "#FFF4E3",
+                padding: "20px",
+                marginTop: "60px",
+                borderRadius: "20px",
+                "&:hover": {
+                  cursor: "pointer",
+                  background: "#2EB1BE",
+                },
+              }}
+            >
+              <img style={{ width: "100%" }} src={user.img} />
+              <Typography
+                sx={{
+                  fontWeight: "600",
+                  fontFamily: "'Poppins', sans-serif",
+                  padding: "25px 0",
+                  color: "#282828",
+                  fontSize: "20px",
+                  "&:hover": {
+                    color: "white",
+                  },
+                }}
+              >
+                {user.health}
+              </Typography>
+              <Typography
+                className="indPara"
+                sx={{
+                  fontFamily: "'Poppins', sans-serif",
+                  padding: "5px 0",
+                  color: "#787C7E",
+                  fontSize: "14px",
+                  "&:hover": {
+                    color: "white",
+                  },
+                }}
+              >
+                {user.para}
+              </Typography>
+            </Grid>
+          ))}
         </Grid>
-        <Grid item xs={1} md={1}></Grid>
-      </Grid>
+        <Grid container sx={{ paddingTop: "150px" }}>
+          <Grid item xs={1} md={1}></Grid>
+          <Grid item xs={10} md={10} sx={{ position: "relative" }}>
+            <img src={Rect} style={{ position: "absolute" }} />
 
+            <Typography
+              className="Visualise"
+              sx={{
+                fontWeight: "bold",
+                fontSize: "45px",
+                fontFamily: "'Poppins', sans-serif",
+                marginLeft: "10px",
+                marginTop: "10px",
+              }}
+            >
+              Visualise your health with personalised health analytics and Al
+              Powered scores.
+              <img
+                // className="exLight"
+                src={Light}
+                style={{
+                  position: "absolute",
+                  top: "-15px",
+                  right: "0px",
+                }}
+              />
+            </Typography>
+            <img
+              className="visualiseVec"
+              style={{ display: "block", marginLeft: "auto" }}
+              src={Vec}
+            />
+          </Grid>
+          <Grid item xs={1} md={1}></Grid>
+        </Grid>
+      </Container>
       <Container>
         <Grid
           container

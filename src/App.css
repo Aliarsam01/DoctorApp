@@ -9,16 +9,69 @@
 .css-ahj2mt-MuiTypography-root {
   line-height: 1 !important;
 }
+.copyright {
+  display: block !important;
+}
+.copyrights {
+  display: none !important;
+}
+.ooterlog {
+  width: 20% !important;
+}
+
 .main {
   width: 95%;
 }
 .drawerLogo {
-  width: 50%;
+  width: 20%;
+}
+.iconss {
+  display: block !important;
+}
+.iconsss {
+  display: none !important;
+}
+@media (max-width: 1024px) {
+  .learn {
+    width: 50% !important;
+  }
+  .headingIn {
+    font-size: 40px !important;
+  }
+  .Visualise {
+    font-size: 39px !important;
+  }
+  .driven {
+    font-size: 34px !important;
+  }
+  .poweredTxt {
+    font-size: 40px !important;
+  }
+  .powerVec {
+    width: 80% !important;
+  }
+  .explore {
+    font-size: 24px !important;
+  }
+  .Customers {
+    font-size: 30px !important;
+  }
+  .cusVec {
+    width: 35% !important;
+  }
+  .Frequently {
+    font-size: 30px !important;
+  }
 }
 @media (max-width: 899px) {
+  .lightss {
+    width: 50% !important;
+  }
+  .menu-width {
+    width: 400px !important;
+  }
   .footerI {
     margin-top: 20px !important;
-    text-align: center !important;
   }
   .appl {
     margin-right: 0px !important;
@@ -29,11 +82,154 @@
   .logo {
     width: 15% !important;
   }
-  .header {
+  .headersss {
     margin: 50px 0 !important;
   }
   .types {
     flex-direction: column-reverse !important;
+  }
+  .learn {
+    width: 50% !important;
+  }
+  .headingIn {
+    font-size: 30px !important;
+  }
+  .Visualise {
+    font-size: 27px !important;
+  }
+  .visualiseVec {
+    width: 35% !important;
+  }
+  .indVec {
+    width: 60% !important;
+  }
+  .indLight {
+    width: 15% !important;
+  }
+  .indPara {
+    font-size: 11px !important;
+  }
+  .driMain {
+    margin-top: 300px !important;
+  }
+  .driven {
+    font-size: 30px !important;
+  }
+  .driverLight {
+    width: 35% !important;
+  }
+  .poweredTxt {
+    font-size: 29px !important;
+  }
+  .powerVec {
+    width: 60% !important;
+  }
+  .powerLight {
+    width: 13% !important;
+  }
+  .place {
+    font-size: 30px !important;
+  }
+  .places {
+    font-size: 30px !important;
+  }
+  .placess {
+    font-size: 14px !important;
+  }
+  .Customers {
+    font-size: 21px !important;
+  }
+  .exLight {
+    width: 10% !important;
+  }
+  .Frequently {
+    font-size: 23px !important;
+  }
+  .Optimistss {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .restores {
+    font-size: 35px !important;
+  }
+}
+@media (max-width: 576px) {
+  .indPara {
+    font-size: 15px !important;
+  }
+  .headerss {
+    display: block !important;
+  }
+  .headerssTwo {
+    display: none !important;
+  }
+  .restore {
+    font-size: 35px !important;
+  }
+  .restores {
+    font-size: 35px !important;
+  }
+  .lightss {
+    width: 50% !important;
+  }
+  .algorithm {
+    font-size: 11px !important;
+  }
+  .poweredTxt {
+    font-size: 27px !important;
+    margin-top: 5px !important;
+  }
+  .place {
+    font-size: 30px !important;
+  }
+  .places {
+    font-size: 30px !important;
+    margin-top: -110px !important;
+    text-align: center !important;
+  }
+  .placess {
+    font-size: 14px !important;
+    margin-top: -80px !important;
+  }
+  .placeLigh {
+    width: 10% !important;
+  }
+  .iconss {
+    display: none !important;
+  }
+  .iconsss {
+    display: block !important;
+  }
+  .headersss {
+    margin-top: -122px !important;
+  }
+  .exLight {
+    width: 10% !important;
+  }
+  .Customers {
+    font-size: 20px !important;
+  }
+  .empower {
+    margin-top: 50px !important;
+  }
+  .Optimistss {
+    display: block !important;
+    justify-content: none !important;
+  }
+  .footerIcon {
+    width: 40% !important;
+    padding-bottom: 0px !important;
+    margin-right: 10px;
+  }
+  .footerI {
+    text-align: center !important;
+  }
+  .copyrights {
+    display: block !important;
+  }
+  .SOCIAL {
+    display: flex !important;
+    justify-content: end !important;
   }
 }
 @media (max-width: 500px) {
@@ -41,14 +237,160 @@
     width: 100%;
   }
   .restore {
-    font-size: 30px !important;
+    font-size: 35px !important;
+  }
+  .restores {
+    font-size: 35px !important;
   }
   .learn {
     width: 50% !important;
   }
+  .drawerLogo {
+    width: 55%;
+  }
+  .menu-width {
+    width: 250px !important;
+  }
+  .coLights {
+    width: 50% !important;
+  }
+  .drivenLig {
+    width: 13% !important;
+  }
+  .Corporates {
+    margin-top: 50px !important;
+  }
 }
-@media (max-width: 385px) {
-  .learn {
-    display: none !important;
+
+@media (max-width: 450px) {
+  .restore {
+    font-size: 34px !important;
+  }
+  .restores {
+    font-size: 44px !important;
+  }
+  .lightss {
+    width: 40% !important;
+  }
+  .lightss {
+    margin: -32px auto auto auto !important;
+  }
+  .And {
+    height: 50px !important;
+  }
+  .Visualise {
+    font-size: 20px !important;
+    margin-top: 10px !important;
+  }
+  .Customers {
+    font-size: 20px !important;
+  }
+  .Frequently {
+    font-size: 20px !important;
+  }
+  .ratess {
+    font-size: 30px !important;
+  }
+  .ratingss {
+    font-size: 13px !important;
+  }
+  .healthcare {
+    padding-bottom: 20px !important;
+  }
+}
+@media (max-width: 390px) {
+  .restore {
+    font-size: 30px !important;
+  }
+  .restores {
+    font-size: 35px !important;
+  }
+
+  .lightss {
+    margin: -30px auto auto auto !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .restore {
+    font-size: 28px !important;
+  }
+  .restores {
+    font-size: 37px !important;
+  }
+  .Optimists {
+    font-size: 13px !important;
+  }
+  .lightss {
+    margin: -35px auto auto auto !important;
+  }
+  .headingIn {
+    font-size: 25px !important;
+  }
+  .Visualise {
+    font-size: 18px !important;
+    margin-top: 10px !important;
+  }
+  .driven {
+    font-size: 29px !important;
+  }
+  .Frequently {
+    font-size: 18px !important;
+  }
+  .Customers {
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 320px) {
+  .restore {
+    font-size: 23px !important;
+  }
+  .restores {
+    font-size: 30px !important;
+  }
+  .Optimists {
+    font-size: 12px !important;
+  }
+  .lightss {
+    margin: -40px auto auto auto !important;
+  }
+  .And {
+    height: 40px !important;
+  }
+  .headingIn {
+    font-size: 23px !important;
+  }
+  .Visualise {
+    font-size: 14px !important;
+    margin-top: 10px !important;
+  }
+  .driven {
+    font-size: 24px !important;
+  }
+  .poweredTxt {
+    font-size: 20px !important;
+  }
+  .place {
+    font-size: 24px !important;
+  }
+  .places {
+    font-size: 24px !important;
+    margin-top: -80px !important;
+  }
+  .placess {
+    font-size: 14px !important;
+    margin-top: -80px !important;
+  }
+  .headersss {
+    margin-top: -122px !important;
+  }
+  .explore {
+    font-size: 20px !important;
+  }
+  .Frequently {
+    font-size: 15px !important;
+  }
+  .Customers {
+    font-size: 15px !important;
   }
 }

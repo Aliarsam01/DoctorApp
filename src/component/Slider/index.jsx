@@ -44,31 +44,38 @@ export default function Sliders() {
   return (
     <>
       <div style={{ background: "#F2FCFD", padding: "100px 0" }}>
-        <Grid container>
-          <Grid item xs={1} md={3}></Grid>
-          <Grid item xs={10} md={6} sx={{ position: "relative" }}>
-            <img src={Rect} style={{ position: "absolute" }} />
+        <Container>
+          <Grid container>
+            <Grid item xs={1} sm={3}></Grid>
+            <Grid item xs={10} sm={6} sx={{ position: "relative" }}>
+              <img src={Rect} style={{ position: "absolute" }} />
 
-            <Typography
-              className="restore"
-              sx={{
-                fontWeight: "bold",
-                fontSize: "45px",
-                fontFamily: "'Poppins', sans-serif",
-                marginLeft: "10px",
-              }}
-            >
-              What Customers Are Saying
+              <Typography
+                className="Customers"
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "36px",
+                  fontFamily: "'Poppins', sans-serif",
+                  marginLeft: "10px",
+                  marginTop: "5px",
+                }}
+              >
+                What Customers Are Saying
+                <img
+                  className="exLight"
+                  src={Light}
+                  style={{ position: "absolute", top: "-15px", right: "0px" }}
+                />
+              </Typography>
               <img
-                src={Light}
-                style={{ position: "absolute", top: "-15px", right: "0px" }}
+                className="cusVec"
+                style={{ display: "block", marginLeft: "auto" }}
+                src={Vec}
               />
-            </Typography>
-            <img style={{ display: "block", marginLeft: "auto" }} src={Vec} />
+            </Grid>
+            <Grid item xs={1} md={3}></Grid>
           </Grid>
-          <Grid item xs={1} md={3}></Grid>
-        </Grid>
-
+        </Container>
         <Container>
           <Slider {...settings}>
             <div>
@@ -81,6 +88,7 @@ export default function Sliders() {
                   background: "white",
                   padding: "25px",
                   marginTop: "30px",
+                  height: "550px",
                 }}
               >
                 <img src={Person} />
@@ -102,7 +110,7 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Partner- Nogel Tube
+                  Employer
                 </Typography>
                 <Typography
                   sx={{
@@ -112,9 +120,13 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  I recently participated in a corporate wellness initiative
+                  provided by my workplace, and I found it to be a beneficial
+                  and enriching experience. The program was customized to my
+                  specific requirements. Being a diabetic person, I found their
+                  diet plans and recipes greatly beneficial. Additionally, I've
+                  subscribed to their yoga sessions, which have absolutely
+                  transformed my life.
                 </Typography>
               </Grid>
             </div>
@@ -124,7 +136,12 @@ export default function Sliders() {
                 item
                 xs={10}
                 md={3.5}
-                sx={{ background: "white", padding: "25px", marginTop: "30px" }}
+                sx={{
+                  background: "white",
+                  padding: "25px",
+                  marginTop: "30px",
+                  height: "550px",
+                }}
               >
                 <img src={Person2} />
                 <Typography
@@ -145,7 +162,7 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Director M.C.U
+                  Employer
                 </Typography>
                 <Typography
                   sx={{
@@ -155,9 +172,12 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  My company just launched a wellness initiative to help
+                  employees stay healthy and productive. I was reluctant
+                  initially, but I soon realized the perks. This wellness
+                  initiative has helped to create a safe, supportive, and
+                  positive workplace culture. Even the commonly overlooked
+                  concerns with sitting posture were addressed.
                 </Typography>
               </Grid>
             </div>
@@ -168,9 +188,14 @@ export default function Sliders() {
                 item
                 xs={10}
                 md={3.5}
-                sx={{ background: "white", padding: "25px", marginTop: "30px" }}
+                sx={{
+                  background: "white",
+                  padding: "25px",
+                  marginTop: "30px",
+                  height: "550px",
+                }}
               >
-                <img src={Person3} />
+                <img src={Person} />
                 <Typography
                   sx={{
                     padding: "15px 0",
@@ -189,7 +214,7 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  CEO JB Construction
+                  Employee
                 </Typography>
                 <Typography
                   sx={{
@@ -199,9 +224,14 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  We just launched a corporate wellness program, and the
+                  feedback from our employees has been extremely positive. Not
+                  only did it improve our physical health, but it also benefited
+                  our mental well-being. People felt more connected to one
+                  another and had the chance to interact in a calm and engaging
+                  setting. This program was a great investment for our company,
+                  and I would strongly recommend it to any employer seeking to
+                  improve their workplace culture.
                 </Typography>
               </Grid>
             </div>
@@ -212,9 +242,14 @@ export default function Sliders() {
                 item
                 xs={10}
                 md={3.5}
-                sx={{ background: "white", padding: "25px", marginTop: "30px" }}
+                sx={{
+                  background: "white",
+                  padding: "25px",
+                  marginTop: "30px",
+                  height: "550px",
+                }}
               >
-                <img src={Person3} />
+                <img src={Person2} />
                 <Typography
                   sx={{
                     padding: "15px 0",
@@ -233,7 +268,7 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  CEO JB Construction
+                  Employee
                 </Typography>
                 <Typography
                   sx={{
@@ -243,9 +278,15 @@ export default function Sliders() {
                     color: "#787C7E",
                   }}
                 >
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  The program offers a variety of activities and sessions,
+                  including nutritional counseling, stress management, physical
+                  fitness, and mental health support. The stress management
+                  classes have been very beneficial in helping employees in
+                  managing their workload and be productive. Most of our
+                  employees have liked participating in fitness programs.
+                  Overall, our employees were delighted with the initiative, and
+                  we look forward to continuing our commitment to workplace
+                  wellness for the welfare of all our team members.
                 </Typography>
               </Grid>
             </div>
