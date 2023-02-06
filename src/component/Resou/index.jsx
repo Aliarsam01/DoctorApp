@@ -40,7 +40,7 @@ function Resou() {
               className="explore"
               sx={{
                 fontWeight: "bold",
-                fontSize: "39px",
+                fontSize: "32px",
                 fontFamily: "'Poppins', sans-serif",
                 marginLeft: "10px",
               }}
