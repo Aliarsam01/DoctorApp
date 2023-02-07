@@ -13,6 +13,7 @@ export default function BasicRating() {
       }}
     >
       <Rating
+        className="ratingss"
         name="simple-controlled"
         value={value}
         onChange={(event, newValue) => {

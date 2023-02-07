@@ -30,28 +30,37 @@ const box = [
 function Resou() {
   return (
     <>
-      <Grid container sx={{ paddingTop: "100px" }}>
-        <Grid item xs={1} md={3.5}></Grid>
-        <Grid item xs={10} md={5} sx={{ position: "relative" }}>
-          <img src={Rect} style={{ position: "absolute" }} />
+      <Container>
+        <Grid container sx={{ paddingTop: "100px" }}>
+          <Grid item xs={1} sm={3.5} md={4}></Grid>
+          <Grid item xs={10} sm={5} md={4} sx={{ position: "relative" }}>
+            <img src={Rect} style={{ position: "absolute" }} />
 
-          <Typography
-            className="restore"
-            sx={{
-              fontWeight: "bold",
-              fontSize: "45px",
-              fontFamily: "'Poppins', sans-serif",
-              marginLeft: "10px",
-            }}
-          >
-            Explore Our Resources
-            <img src={Light} style={{ position: "absolute", top: "-15px" }} />
-          </Typography>
-          <img style={{ display: "block", margin: "auto" }} src={Vec} />
+            <Typography
+              className="explore"
+              sx={{
+                fontWeight: "bold",
+                fontSize: "32px",
+                fontFamily: "'Apercu', sans-serif",
+
+                marginLeft: "10px",
+              }}
+            >
+              Explore Our Resources
+              <img
+                className="exLight"
+                src={Light}
+                style={{ position: "absolute", top: "-15px" }}
+              />
+            </Typography>
+            <img
+              style={{ display: "block", marginLeft: "auto", width: "40%" }}
+              src={Vec}
+            />
+          </Grid>
+          <Grid item xs={1} sm={3.5} md={4}></Grid>
         </Grid>
-        <Grid item xs={1} md={3.5}></Grid>
-      </Grid>
-
+      </Container>
       <Grid
         container
         sx={{
@@ -64,6 +73,7 @@ function Resou() {
           <Grid
             item
             xs={10}
+            sm={3.5}
             md={3}
             sx={{
               background: "#FFF4E3",
@@ -80,7 +90,8 @@ function Resou() {
             <Typography
               sx={{
                 fontWeight: "600",
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Apercu', sans-serif",
+
                 padding: "25px 0",
                 color: "#282828",
                 fontSize: "20px",
@@ -92,9 +103,10 @@ function Resou() {
               {user.health}
             </Typography>
             <Typography
+              className="indPara"
               sx={{
-                fontWeight: "600",
-                fontFamily: "'Poppins', sans-serif",
+                fontFamily: "'Apercu', sans-serif",
+
                 padding: "5px 0",
                 color: "#787C7E",
                 fontSize: "14px",

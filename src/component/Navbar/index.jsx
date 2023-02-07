@@ -12,31 +12,36 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "../../asset/logo.png";
 import Logos from "../../asset/logo.png";
-import StarIcon from "@mui/icons-material/Star";
-import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
-import SearchIcon from "@mui/icons-material/Search";
-import IconButton from "@mui/material/IconButton";
+import Down from "../../asset/Vector.png";
 import Cart from "../../asset/cart.png";
 import { Button } from "@mui/material";
+import { Container } from "@mui/system";
 
 const theme = createTheme();
 
 theme.typography.logo = {
-  fontFamily: "'Source Sans 3', sans-serif",
+  fontFamily: "'Apercu', sans-serif",
   fontSize: "40px",
   textTransform: "uppercase",
   cursor: "pointer",
 };
 
 theme.typography.navbarBtn = {
-  fontFamily: "'Ubuntu', sans-serif",
+  fontFamily: "'Apercu', sans-serif",
+
   fontSize: "16px",
   alignSelf: "center",
   color: "black",
   cursor: "pointer",
+  paddingBottom: "10px",
+  "&:hover": {
+    borderBottom: "2px solid #2EB1BE",
+    fontWeight: "bold",
+  },
 };
 theme.typography.roadmap = {
-  fontFamily: "'Ubuntu', sans-serif",
+  fontFamily: "'Apercu', sans-serif",
+
   fontSize: "20px",
   alignSelf: "center",
   background:
@@ -92,114 +97,120 @@ const Navbar = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, true)}
     >
-      <Grid
-        Container
-        sx={{
-          background: "white",
-
-          display: "flex",
-          justifyContent: "space-between",
-          // padding: "20px 0",
-          margin: "20px",
-        }}
-      >
-        <Grid item sm={6}>
-          <img className="drawerLogo" src={Logos} />
-        </Grid>
-        <Grid item sm={6} sx={{ display: "flex", justifyContent: "end" }}>
-          <CloseIcon onClose={toggleDrawer} sx={{ color: "black" }} />
-        </Grid>
-      </Grid>
-      <Grid
-        sx={{
-          background: "white",
-          paddingTop: "40px",
-          marginLeft: "5px",
-        }}
-      >
-        <img style={{ marginBottom: "20px" }} src={Cart} />
-        <AnchorLink style={{ textDecoration: "none" }} href="#home">
-          <Typography
-            sx={{
-              fontFamily: "'Ubuntu', sans-serif",
-              padding: "10px",
-              color: "black",
-              fontWeight: "bold",
-            }}
-          >
-            Tests
-          </Typography>
-        </AnchorLink>
-        <AnchorLink style={{ textDecoration: "none" }} href="#about">
-          <Typography
-            sx={{
-              fontFamily: "'Ubuntu', sans-serif",
-              padding: "10px",
-              color: "black",
-              fontWeight: "bold",
-            }}
-          >
-            Corporate Wellness
-          </Typography>
-        </AnchorLink>
-        <AnchorLink style={{ textDecoration: "none" }} href="#services">
-          <Typography
-            sx={{
-              fontFamily: "'Ubuntu', sans-serif",
-              padding: "10px",
-              color: "black",
-              fontWeight: "bold",
-            }}
-          >
-            Programs
-          </Typography>
-        </AnchorLink>
-        <AnchorLink style={{ textDecoration: "none" }} href="#services">
-          <Typography
-            sx={{
-              fontFamily: "'Ubuntu', sans-serif",
-              padding: "10px",
-              color: "black",
-              fontWeight: "bold",
-            }}
-          >
-            More
-          </Typography>
-        </AnchorLink>
-        <Button
-          sx={{
-            background: "#2EB1BE",
-            textTransform: "capitalize",
-            padding: "10px 20px",
-            color: "white",
-            fontWeight: "700",
-            width: "90%",
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "20px",
-          }}
-        >
-          Get The App
-        </Button>
-        <Button
+      <Container>
+        <Grid
+          Container
           sx={{
             background: "white",
-            textTransform: "capitalize",
-            padding: "10px 20px",
-            color: "#2EB1BE",
-            border: "1px solid #2EB1BE",
-            fontWeight: "700",
-            width: "90%",
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "20px",
+
+            display: "flex",
+            justifyContent: "space-between",
+            // padding: "20px 0",
+            margin: "20px 0",
           }}
         >
-          Log In
-        </Button>
-      </Grid>
+          <Grid item sm={6}>
+            <img className="drawerLogo" src={Logos} />
+          </Grid>
+          <Grid item sm={6} sx={{ display: "flex", justifyContent: "end" }}>
+            <CloseIcon onClose={toggleDrawer} sx={{ color: "black" }} />
+          </Grid>
+        </Grid>
+        <Grid
+          sx={{
+            background: "white",
+            paddingTop: "40px",
+            marginLeft: "5px",
+          }}
+        >
+          <img style={{ marginBottom: "20px" }} src={Cart} />
+          <AnchorLink style={{ textDecoration: "none" }} href="#home">
+            <Typography
+              sx={{
+                fontFamily: "'Apercu', sans-serif",
+
+                padding: "10px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              Tests
+            </Typography>
+          </AnchorLink>
+          <AnchorLink style={{ textDecoration: "none" }} href="#about">
+            <Typography
+              sx={{
+                fontFamily: "'Apercu', sans-serif",
+
+                padding: "10px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              Corporate Wellness
+            </Typography>
+          </AnchorLink>
+          <AnchorLink style={{ textDecoration: "none" }} href="#services">
+            <Typography
+              sx={{
+                fontFamily: "'Apercu', sans-serif",
+
+                padding: "10px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              Programs
+            </Typography>
+          </AnchorLink>
+          <AnchorLink style={{ textDecoration: "none" }} href="#services">
+            <Typography
+              sx={{
+                fontFamily: "'Apercu', sans-serif",
+
+                padding: "10px",
+                color: "black",
+                fontWeight: "bold",
+              }}
+            >
+              More
+            </Typography>
+          </AnchorLink>
+          <Button
+            sx={{
+              background: "#2EB1BE",
+              textTransform: "capitalize",
+              padding: "10px 20px",
+              color: "white",
+              fontWeight: "700",
+              width: "90%",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "20px",
+            }}
+          >
+            Get The App
+          </Button>
+          <Button
+            sx={{
+              background: "white",
+              textTransform: "capitalize",
+              padding: "10px 20px",
+              color: "#2EB1BE",
+              border: "1px solid #2EB1BE",
+              fontWeight: "700",
+              width: "90%",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "20px",
+            }}
+          >
+            Log In
+          </Button>
+        </Grid>
+      </Container>
     </Box>
   );
   return (
@@ -207,155 +218,169 @@ const Navbar = () => {
       <AppBar
         className="topbar_nav"
         position="static"
-        style={{ background: "transparent", opacity: "80%" }}
+        style={{ background: "transparent", opacity: "80%", boxShadow: "none" }}
       >
-        <Grid
-          className="navbar"
-          container
-          sx={{
-            background: "transparent",
-            padding: "20px",
-          }}
-        >
+        <Container>
           <Grid
-            item
-            xs={8}
-            sm={6}
-            md={2}
-            lg={2}
-            className="logo"
-            sx={{ alignSelf: "center" }}
-          >
-            <img className="logo" src={Logo} />
-          </Grid>
-
-          <Box
+            className="navbar"
+            container
             sx={{
-              flexGrow: 1,
-              display: {
-                xs: "flex",
-                md: "none",
-                justifyContent: "flex-end",
-              },
+              background: "transparent",
+              padding: "20px 0",
             }}
           >
-            <div className="menuicon">
-              {["left"].map((anchor) => (
-                <React.Fragment key={anchor}>
-                  <MenuIcon
-                    sx={{
-                      fontSize: "40px",
-                      color: "black",
-                      alignSelf: "center",
-                    }}
-                    onClick={toggleDrawer(anchor, true)}
-                  />
-                  <Drawer
-                    anchor={anchor}
-                    open={state[anchor]}
-                    onClose={toggleDrawer(anchor, true)}
-                  >
-                    {list(anchor)}
-                  </Drawer>
-                </React.Fragment>
-              ))}
-            </div>
-
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{}}
+            <Grid
+              item
+              xs={8}
+              sm={6}
+              md={1}
+              lg={1}
+              className="logo"
+              sx={{ alignSelf: "center" }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"></Typography>
-              </MenuItem>
-            </Menu>
-          </Box>
+              <img className="logo" src={Logo} />
+            </Grid>
 
-          <Grid item xs={8} md={4} sx={{ alignSelf: "center" }}>
             <Box
-              className="navbar-hide"
               sx={{
                 flexGrow: 1,
+                display: {
+                  xs: "flex",
+                  md: "none",
+                  justifyContent: "flex-end",
+                },
+              }}
+            >
+              <div className="menuicon">
+                {["right"].map((anchor) => (
+                  <React.Fragment key={anchor}>
+                    <MenuIcon
+                      sx={{
+                        fontSize: "40px",
+                        color: "black",
+                        alignSelf: "center",
+                      }}
+                      onClick={toggleDrawer(anchor, true)}
+                    />
+                    <Drawer
+                      anchor={anchor}
+                      open={state[anchor]}
+                      onClose={toggleDrawer(anchor, true)}
+                    >
+                      {list(anchor)}
+                    </Drawer>
+                  </React.Fragment>
+                ))}
+              </div>
+
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{}}
+              >
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"></Typography>
+                </MenuItem>
+              </Menu>
+            </Box>
+
+            <Grid item xs={8} md={5} lg={4} sx={{ alignSelf: "center" }}>
+              <Box
+                className="navbar-hide"
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ThemeProvider theme={theme}>
+                  <AnchorLink
+                    style={{ textDecoration: "none" }}
+                    href="#tokemonics"
+                  >
+                    <Typography variant="navbarBtn">Tests</Typography>
+                  </AnchorLink>
+                </ThemeProvider>
+                <ThemeProvider theme={theme}>
+                  <AnchorLink style={{ textDecoration: "none" }} href="#rarity">
+                    <Typography variant="navbarBtn">
+                      Corporate Wellness
+                    </Typography>
+                  </AnchorLink>
+                </ThemeProvider>
+                <ThemeProvider theme={theme}>
+                  <AnchorLink style={{ textDecoration: "none" }} href="#rarity">
+                    <Typography variant="navbarBtn">Programs</Typography>
+                  </AnchorLink>
+                </ThemeProvider>
+                <ThemeProvider theme={theme}>
+                  <AnchorLink style={{ textDecoration: "none" }} href="#faq">
+                    <Typography variant="navbarBtn">
+                      More
+                      <img style={{ marginLeft: "10px" }} src={Down} />
+                    </Typography>
+                  </AnchorLink>
+                </ThemeProvider>
+              </Box>
+            </Grid>
+            <Grid item md={2} lg={4}></Grid>
+            <Grid
+              item
+              xs={8}
+              md={4}
+              lg={3}
+              className="navbar-hide"
+              sx={{
+                alignSelf: "center",
                 display: "flex",
                 justifyContent: "space-between",
               }}
             >
-              <ThemeProvider theme={theme}>
-                <AnchorLink
-                  style={{ textDecoration: "none" }}
-                  href="#tokemonics"
-                >
-                  <Typography variant="navbarBtn">Tests</Typography>
-                </AnchorLink>
-              </ThemeProvider>
-              <ThemeProvider theme={theme}>
-                <AnchorLink style={{ textDecoration: "none" }} href="#rarity">
-                  <Typography variant="navbarBtn">
-                    Corporate Wellness
-                  </Typography>
-                </AnchorLink>
-              </ThemeProvider>
-              <ThemeProvider theme={theme}>
-                <Typography variant="navbarBtn">Programs</Typography>
-              </ThemeProvider>
-              <ThemeProvider theme={theme}>
-                <AnchorLink style={{ textDecoration: "none" }} href="#faq">
-                  <Typography variant="navbarBtn">More</Typography>
-                </AnchorLink>
-              </ThemeProvider>
-            </Box>
+              <img style={{ alignSelf: "center" }} src={Cart} />
+              <Button
+                sx={{
+                  background: "#2EB1BE",
+                  textTransform: "capitalize",
+                  padding: "10px 20px",
+                  color: "white",
+                  fontWeight: "700",
+                  "&:hover": {
+                    background: "#2EB1BE",
+                  },
+                }}
+              >
+                Get The App
+              </Button>
+              <Button
+                sx={{
+                  background: "white",
+                  textTransform: "capitalize",
+                  padding: "10px 20px",
+                  color: "#2EB1BE",
+                  border: "1px solid #2EB1BE",
+                  fontWeight: "700",
+                  "&:hover": {
+                    background: "white",
+                    border: "1px solid #2EB1BE",
+                  },
+                }}
+              >
+                Log In
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item md={2} lg={3}></Grid>
-          <Grid
-            item
-            xs={8}
-            md={4}
-            lg={3}
-            className="navbar-hide"
-            sx={{
-              alignSelf: "center",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
-            <img style={{ alignSelf: "center" }} src={Cart} />
-            <Button
-              sx={{
-                background: "#2EB1BE",
-                textTransform: "capitalize",
-                padding: "10px 20px",
-                color: "white",
-                fontWeight: "700",
-              }}
-            >
-              Get The App
-            </Button>
-            <Button
-              sx={{
-                background: "white",
-                textTransform: "capitalize",
-                padding: "10px 20px",
-                color: "#2EB1BE",
-                border: "1px solid #2EB1BE",
-                fontWeight: "700",
-              }}
-            >
-              Log In
-            </Button>
-          </Grid>
-        </Grid>
+        </Container>
       </AppBar>
     </React.Fragment>
   );
