@@ -3,10 +3,11 @@ import React from "react";
 import Rect from "../../asset/Rect.png";
 import Vec from "../../asset/vec.png";
 import Light from "../../asset/light.png";
-import Person from "../../asset/person.png";
-import Person2 from "../../asset/person2.png";
+import Person from "../../asset/person.jpg";
+import Person2 from "../../asset/person2.jpg";
+import Person3 from "../../asset/person3.jpg";
 import Slider from "react-slick";
-import { Container } from "@mui/system";
+import { Container, height } from "@mui/system";
 
 ////////////////////////////////////
 export default function Sliders() {
@@ -92,7 +93,10 @@ export default function Sliders() {
                   height: "550px",
                 }}
               >
-                <img src={Person} />
+                <img
+                  style={{ width: "30%", borderRadius: "50%", height: "77px" }}
+                  src={Person}
+                />
                 <Typography
                   sx={{
                     padding: "15px 0",
@@ -102,7 +106,7 @@ export default function Sliders() {
                     fontSize: "18px",
                   }}
                 >
-                  Savannah Nguyen
+                  Nayeem Khan
                 </Typography>
                 <Typography
                   sx={{
@@ -147,7 +151,10 @@ export default function Sliders() {
                   height: "550px",
                 }}
               >
-                <img src={Person2} />
+                <img
+                  style={{ width: "25%", height: "77px", borderRadius: "50%" }}
+                  src={Person2}
+                />
                 <Typography
                   sx={{
                     padding: "15px 0",
@@ -157,7 +164,7 @@ export default function Sliders() {
                     fontSize: "18px",
                   }}
                 >
-                  Darlene Robertson
+                  Asha Roy
                 </Typography>
                 <Typography
                   sx={{
@@ -202,7 +209,10 @@ export default function Sliders() {
                   height: "550px",
                 }}
               >
-                <img src={Person} />
+                <img
+                  style={{ width: "25%", borderRadius: "50%", height: "77px" }}
+                  src={Person3}
+                />
                 <Typography
                   sx={{
                     padding: "15px 0",
@@ -212,7 +222,7 @@ export default function Sliders() {
                     fontSize: "18px",
                   }}
                 >
-                  Jacob Jones
+                  Nisha Gupta
                 </Typography>
                 <Typography
                   sx={{
@@ -246,7 +256,7 @@ export default function Sliders() {
               </Grid>
             </div>
 
-            <div>
+            {/* <div>
               <Grid
                 className="main"
                 item
@@ -302,7 +312,7 @@ export default function Sliders() {
                   wellness for the welfare of all our team members.
                 </Typography>
               </Grid>
-            </div>
+            </div> */}
           </Slider>
         </Container>
       </div>
