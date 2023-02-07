@@ -8,6 +8,7 @@ import Person2 from "../../asset/person2.png";
 import Slider from "react-slick";
 import { Container } from "@mui/system";
 
+////////////////////////////////////
 export default function Sliders() {
   var settings = {
     dots: false,
