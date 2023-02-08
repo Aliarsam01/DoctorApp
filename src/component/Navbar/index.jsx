@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -55,14 +55,10 @@ theme.typography.roadmap = {
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [showModal, setShowModal] = useState(false);
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  function myFunction() {
-    window.open("https://www.w3schools.com");
-  }
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
