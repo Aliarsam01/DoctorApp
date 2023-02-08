@@ -5,7 +5,6 @@ import footerIcon from "../../asset/apple.png";
 import footerIcon2 from "../../asset/mobile.png";
 import footerLogo from "../../asset/logo.png";
 
-/////
 function Footer() {
   return (
     <>

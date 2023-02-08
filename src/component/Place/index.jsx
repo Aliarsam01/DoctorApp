@@ -7,7 +7,7 @@ import Mob from "../../asset/mob.png";
 import { Container } from "@mui/system";
 import Apple from "../../asset/mobile.svg";
 import And from "../../asset/apple.svg";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 function Place() {
   return (
@@ -117,9 +117,9 @@ function Place() {
           </Grid>
         </Grid>
         <Grid item xs={10} sm={5} md={4} sx={{ overflow: "hidden" }}>
-          <Fade right duration={1000}>
-            <img className="headersss" style={{ width: "100%" }} src={Mob} />
-          </Fade>
+          {/* <Fade right duration={1000}> */}
+          <img className="headersss" style={{ width: "100%" }} src={Mob} />
+          {/* </Fade> */}
         </Grid>
         <Grid
           className="iconsss"
