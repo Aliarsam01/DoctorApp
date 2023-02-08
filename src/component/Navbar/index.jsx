@@ -214,7 +214,6 @@ const Navbar = () => {
     </Box>
   );
   return (
-    //////////
     <React.Fragment>
       <AppBar
         className="topbar_nav"
