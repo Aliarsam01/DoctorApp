@@ -8,6 +8,7 @@ import And from "../../asset/apple.svg";
 import Header from "../../asset/header.png";
 import BasicRating from "../rating";
 import { Container } from "@mui/system";
+import Fade from "react-reveal/Fade";
 
 function Optimal() {
   return (
@@ -28,8 +29,11 @@ function Optimal() {
             md={4}
             style={{ display: "none" }}
             className="headerss"
+            sx={{ overflow: "hidden" }}
           >
-            <img className="header" style={{ width: "100%" }} src={Header} />
+            <Fade right duration={1000}>
+              <img className="header" style={{ width: "100%" }} src={Header} />
+            </Fade>
           </Grid>
           <Grid
             className="empower"
@@ -118,8 +122,17 @@ function Optimal() {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={4} md={5} className="headerssTwo">
-            <img className="header" style={{ width: "100%" }} src={Header} />
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={5}
+            sx={{ overflow: "hidden" }}
+            className="headerssTwo"
+          >
+            <Fade duration={1000} right>
+              <img className="header" style={{ width: "100%" }} src={Header} />
+            </Fade>
           </Grid>
         </Grid>
 

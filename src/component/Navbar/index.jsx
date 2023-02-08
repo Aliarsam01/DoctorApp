@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -55,10 +55,14 @@ theme.typography.roadmap = {
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  // const handleClick = () => {
+  //   window.open("https://www.optimists.in/tests/");
+  // };
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -305,16 +309,29 @@ const Navbar = () => {
                 }}
               >
                 <ThemeProvider theme={theme}>
-                  <AnchorLink
-                    style={{ textDecoration: "none" }}
-                    href="#tokemonics"
-                  >
-                    <Typography variant="navbarBtn">Tests</Typography>
+                  <AnchorLink style={{ textDecoration: "none" }}>
+                    <Typography
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href =
+                          "https://www.optimists.in/tests/";
+                      }}
+                      variant="navbarBtn"
+                    >
+                      Tests
+                    </Typography>
                   </AnchorLink>
                 </ThemeProvider>
                 <ThemeProvider theme={theme}>
                   <AnchorLink style={{ textDecoration: "none" }} href="#rarity">
-                    <Typography variant="navbarBtn">
+                    <Typography
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href =
+                          "https://www.optimists.in/corporate-wellness/";
+                      }}
+                      variant="navbarBtn"
+                    >
                       Corporate Wellness
                     </Typography>
                   </AnchorLink>
@@ -363,6 +380,10 @@ const Navbar = () => {
                 Get The App
               </Button>
               <Button
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://www.optimists.in/enter/";
+                }}
                 sx={{
                   background: "white",
                   textTransform: "capitalize",

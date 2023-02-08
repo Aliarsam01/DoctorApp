@@ -3,7 +3,7 @@ import React from "react";
 import Rect from "../../asset/Rect.png";
 import Vec from "../../asset/vec.png";
 import Light from "../../asset/light.png";
-
+import Fade from "react-reveal/Fade";
 import Info from "../../asset/info.png";
 import { Container } from "@mui/system";
 
@@ -14,30 +14,32 @@ function Powered() {
         <Grid container sx={{ paddingTop: "150px" }}>
           <Grid item xs={2} sm={4} md={4}></Grid>
           <Grid item xs={8} sm={4} md={4} sx={{ position: "relative" }}>
-            <img src={Rect} style={{ position: "absolute" }} />
+            <Fade bottom duration={2000}>
+              <img src={Rect} style={{ position: "absolute" }} />
 
-            <Typography
-              className="poweredTxt"
-              sx={{
-                fontWeight: "bold",
-                fontSize: "45px",
-                fontFamily: "'Apercu', sans-serif",
+              <Typography
+                className="poweredTxt"
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "45px",
+                  fontFamily: "'Apercu', sans-serif",
 
-                marginLeft: "10px",
-              }}
-            >
-              Powered by OLi
+                  marginLeft: "10px",
+                }}
+              >
+                Powered by OLi
+                <img
+                  className="exLight"
+                  src={Light}
+                  style={{ position: "absolute", top: "-15px" }}
+                />
+              </Typography>
               <img
-                className="exLight"
-                src={Light}
-                style={{ position: "absolute", top: "-15px" }}
+                className="powerVec"
+                style={{ display: "block", marginLeft: "auto" }}
+                src={Vec}
               />
-            </Typography>
-            <img
-              className="powerVec"
-              style={{ display: "block", marginLeft: "auto" }}
-              src={Vec}
-            />
+            </Fade>
           </Grid>
           <Grid item xs={2} sm={4} md={4}></Grid>
 

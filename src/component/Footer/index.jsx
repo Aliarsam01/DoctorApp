@@ -88,8 +88,13 @@ function Footer() {
               >
                 Women’s Health
               </Typography>
-              fontFamily: "'Apercu', sans-serif",
-              <Typography sx={{ fontSize: "15px", paddingBottom: "20px" }}>
+              <Typography
+                sx={{
+                  fontSize: "15px",
+                  paddingBottom: "20px",
+                  fontFamily: "'Apercu', sans-serif",
+                }}
+              >
                 Sexual Health
               </Typography>
               <Typography
