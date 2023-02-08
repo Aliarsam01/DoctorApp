@@ -10,7 +10,7 @@ import Pad from "../../asset/ipad.png";
 import Macbook from "../../asset/macBook.png";
 import Mobiles from "../../asset/mobiles.png";
 import { Container } from "@mui/system";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 
 const box = [
   {
@@ -38,32 +38,32 @@ function Individuals() {
           <Grid item xs={2} sm={4} md={4}></Grid>
 
           <Grid item xs={8} sm={4} md={4} sx={{ position: "relative" }}>
-            {/* <Fade duration={2000} bottom> */}
-            <img src={Rect} style={{ position: "absolute" }} />
+            <Fade duration={2000} bottom>
+              <img src={Rect} style={{ position: "absolute" }} />
 
-            <Typography
-              className="headingIn"
-              sx={{
-                fontWeight: "bold",
-                fontSize: "45px",
-                fontFamily: "'Apercu', sans-serif",
+              <Typography
+                className="headingIn"
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "45px",
+                  fontFamily: "'Apercu', sans-serif",
 
-                marginLeft: "10px",
-              }}
-            >
-              For Individuals
+                  marginLeft: "10px",
+                }}
+              >
+                For Individuals
+                <img
+                  className="exLight"
+                  src={Light}
+                  style={{ position: "absolute", top: "-15px" }}
+                />
+              </Typography>
               <img
-                className="exLight"
-                src={Light}
-                style={{ position: "absolute", top: "-15px" }}
+                className="indVec"
+                style={{ display: "block", margin: "auto" }}
+                src={Vec}
               />
-            </Typography>
-            <img
-              className="indVec"
-              style={{ display: "block", margin: "auto" }}
-              src={Vec}
-            />
-            {/* </Fade> */}
+            </Fade>
           </Grid>
 
           <Grid item xs={2} sm={4} md={4}></Grid>
@@ -187,17 +187,17 @@ function Individuals() {
           }}
         >
           <Grid item xs={12} md={3}>
-            {/* <Fade duration={1000} left> */}
-            <img style={{ width: "100%", height: "80%" }} src={Pad} />
-            {/* </Fade> */}
+            <Fade duration={1000} left>
+              <img style={{ width: "100%", height: "80%" }} src={Pad} />
+            </Fade>
           </Grid>
           <Grid item xs={12} md={5}>
             <img style={{ width: "100%", height: "80%" }} src={Macbook} />
           </Grid>
           <Grid item xs={12} md={3} sx={{ overflow: "hidden" }}>
-            {/* <Fade duration={1000} right> */}
-            <img style={{ width: "100%", height: "80%" }} src={Mobiles} />
-            {/* </Fade> */}
+            <Fade duration={1000} right>
+              <img style={{ width: "100%", height: "80%" }} src={Mobiles} />
+            </Fade>
           </Grid>
         </Grid>
       </Container>
