@@ -4,9 +4,6 @@ import React from "react";
 import footerIcon from "../../asset/apple.png";
 import footerIcon2 from "../../asset/mobile.png";
 import footerLogo from "../../asset/logo.png";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
   return (
