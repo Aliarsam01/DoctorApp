@@ -116,8 +116,8 @@ function Place() {
             />
           </Grid>
         </Grid>
-        <Grid item xs={10} sm={5} md={4} sx={{ overflow: "hidden" }}>
-          <Fade right duration={1000}>
+        <Grid item xs={10} sm={5} md={4}>
+          <Fade right duration={1000} sx={{ overflow: "hidden" }}>
             <img className="headersss" style={{ width: "100%" }} src={Mob} />
           </Fade>
         </Grid>

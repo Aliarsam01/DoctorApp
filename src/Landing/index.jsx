@@ -11,6 +11,7 @@ import Sliders from "../component/Slider";
 import Footer from "../component/Footer";
 import Place from "../component/Place";
 import { Container } from "@mui/system";
+import DrivenTwo from "../component/DrivenTwo";
 
 function Landing() {
   return (
@@ -21,6 +22,8 @@ function Landing() {
       <Individuals />
       <Driven />
       <Powered />
+      <DrivenTwo />
+
       <Place />
       <Resou />
       <Sliders />

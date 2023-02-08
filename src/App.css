@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.cdnfonts.com/css/apercu");
 
+.driMain2 {
+  display: none !important;
+}
+.driMain {
+  display: block !important;
+}
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
   box-shadow: none !important;
 }
@@ -165,6 +171,12 @@
   }
 }
 @media (max-width: 576px) {
+  .driMain2 {
+    display: block !important;
+  }
+  .driMain {
+    display: none !important;
+  }
   .indPara {
     font-size: 15px !important;
   }
