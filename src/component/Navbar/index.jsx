@@ -60,9 +60,9 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  // const handleClick = () => {
-  //   window.open("https://www.optimists.in/tests/");
-  // };
+  function myFunction() {
+    window.open("https://www.w3schools.com");
+  }
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
