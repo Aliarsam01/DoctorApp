@@ -10,7 +10,8 @@ import Resou from "../component/Resou";
 import Sliders from "../component/Slider";
 import Footer from "../component/Footer";
 import Place from "../component/Place";
-//////////////////////////////////////
+import { Container } from "@mui/system";
+
 function Landing() {
   return (
     <>
