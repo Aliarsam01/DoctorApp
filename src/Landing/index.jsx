@@ -9,7 +9,6 @@ import Powered from "../component/Powered";
 import Resou from "../component/Resou";
 import Sliders from "../component/Slider";
 import Footer from "../component/Footer";
-import { Container } from "@mui/system";
 import Place from "../component/Place";
 
 function Landing() {
