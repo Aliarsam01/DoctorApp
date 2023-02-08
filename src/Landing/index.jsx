@@ -10,7 +10,7 @@ import Resou from "../component/Resou";
 import Sliders from "../component/Slider";
 import Footer from "../component/Footer";
 import Place from "../component/Place";
-
+//////////////////////////////////////
 function Landing() {
   return (
     <>
