@@ -16,6 +16,7 @@ import Down from "../../asset/Vector.png";
 import Cart from "../../asset/cart.png";
 import { Button } from "@mui/material";
 import { Container } from "@mui/system";
+import { useNavigate } from "react-router-dom";
 
 const theme = createTheme();
 
@@ -53,6 +54,11 @@ theme.typography.roadmap = {
 };
 
 const Navbar = () => {
+  let navigate = useNavigate();
+  const handleNavigate = (link) => {
+    navigate(link);
+  };
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -102,7 +108,6 @@ const Navbar = () => {
           Container
           sx={{
             background: "white",
-
             display: "flex",
             justifyContent: "space-between",
             // padding: "20px 0",
@@ -110,7 +115,7 @@ const Navbar = () => {
           }}
         >
           <Grid item sm={6}>
-            <img className="drawerLogo" src={Logos} />
+            {/* <img className="drawerLogo" src={Logos} /> */}
           </Grid>
           <Grid item sm={6} sx={{ display: "flex", justifyContent: "end" }}>
             <CloseIcon onClose={toggleDrawer} sx={{ color: "black" }} />
@@ -119,11 +124,10 @@ const Navbar = () => {
         <Grid
           sx={{
             background: "white",
-            paddingTop: "40px",
             marginLeft: "5px",
           }}
         >
-          <img style={{ marginBottom: "20px" }} src={Cart} />
+          {/* <img style={{ marginBottom: "20px" }} src={Cart} /> */}
           <AnchorLink style={{ textDecoration: "none" }} href="#home">
             <Typography
               sx={{
@@ -134,7 +138,7 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
-              Tests
+              Health Check-up
             </Typography>
           </AnchorLink>
           <AnchorLink style={{ textDecoration: "none" }} href="#about">
@@ -174,9 +178,13 @@ const Navbar = () => {
               }}
             >
               More
+              <img
+                style={{ marginLeft: "10px", width: "7%", color: "black" }}
+                src={Down}
+              />
             </Typography>
           </AnchorLink>
-          <Button
+          {/* <Button
             sx={{
               background: "#2EB1BE",
               textTransform: "capitalize",
@@ -191,7 +199,7 @@ const Navbar = () => {
             }}
           >
             Get The App
-          </Button>
+          </Button> */}
           <Button
             sx={{
               background: "white",
@@ -217,8 +225,10 @@ const Navbar = () => {
     <React.Fragment>
       <AppBar
         className="topbar_nav"
-        position="static"
-        style={{ background: "transparent", opacity: "80%", boxShadow: "none" }}
+        position="fixed"
+        style={{
+          background: "white",
+        }}
       >
         <Container>
           <Grid
@@ -231,7 +241,7 @@ const Navbar = () => {
           >
             <Grid
               item
-              xs={8}
+              xs={6}
               sm={6}
               md={1}
               lg={1}
@@ -241,7 +251,9 @@ const Navbar = () => {
               <img className="logo" src={Logo} />
             </Grid>
 
-            <Box
+            <Grid
+              item
+              xs={6}
               sx={{
                 flexGrow: 1,
                 display: {
@@ -251,7 +263,28 @@ const Navbar = () => {
                 },
               }}
             >
-              <div className="menuicon">
+              <Button
+                className="appxx"
+                sx={{
+                  background: "#2EB1BE",
+                  textTransform: "capitalize",
+                  // padding: "10px 20px",
+                  width: "30%",
+                  color: "white",
+                  marginRight: "30px",
+                  fontWeight: "700",
+                  "&:hover": {
+                    background: "#2EB1BE",
+                  },
+                }}
+              >
+                App
+              </Button>
+
+              <div
+                style={{ alignSelf: "center", fontSize: "30px" }}
+                className="menuicon"
+              >
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <MenuIcon
@@ -293,9 +326,9 @@ const Navbar = () => {
                   <Typography textAlign="center"></Typography>
                 </MenuItem>
               </Menu>
-            </Box>
+            </Grid>
 
-            <Grid item xs={8} md={5} lg={4} sx={{ alignSelf: "center" }}>
+            <Grid item xs={8} md={6} lg={5} sx={{ alignSelf: "center" }}>
               <Box
                 className="navbar-hide"
                 sx={{
@@ -307,25 +340,17 @@ const Navbar = () => {
                 <ThemeProvider theme={theme}>
                   <AnchorLink style={{ textDecoration: "none" }}>
                     <Typography
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href =
-                          "https://www.optimists.in/tests/";
-                      }}
+                      onClick={() => handleNavigate("/")}
                       variant="navbarBtn"
                     >
-                      Tests
+                      Health Check-up
                     </Typography>
                   </AnchorLink>
                 </ThemeProvider>
                 <ThemeProvider theme={theme}>
                   <AnchorLink style={{ textDecoration: "none" }} href="#rarity">
                     <Typography
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href =
-                          "https://www.optimists.in/corporate-wellness/";
-                      }}
+                      onClick={() => handleNavigate("/corporate")}
                       variant="navbarBtn"
                     >
                       Corporate Wellness
@@ -347,12 +372,12 @@ const Navbar = () => {
                 </ThemeProvider>
               </Box>
             </Grid>
-            <Grid item md={2} lg={4}></Grid>
+            <Grid item md={1} lg={3}></Grid>
             <Grid
               item
               xs={8}
               md={4}
-              lg={3}
+              lg={2.5}
               className="navbar-hide"
               sx={{
                 alignSelf: "center",
@@ -360,7 +385,7 @@ const Navbar = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img style={{ alignSelf: "center" }} src={Cart} />
+              {/* <img style={{ alignSelf: "center" }} src={Cart} /> */}
               <Button
                 sx={{
                   background: "#2EB1BE",

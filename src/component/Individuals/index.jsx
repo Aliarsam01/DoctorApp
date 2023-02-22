@@ -8,7 +8,7 @@ import Vec from "../../asset/vec.png";
 import Light from "../../asset/light.png";
 import Pad from "../../asset/ipad.png";
 import Macbook from "../../asset/macBook.png";
-import Mobiles from "../../asset/mobiles.png";
+import Mobiles from "../../asset/mobiles.jpg";
 import { Container } from "@mui/system";
 import Fade from "react-reveal/Fade";
 
@@ -159,11 +159,12 @@ function Individuals() {
               Powered scores.
               <img
                 // className="exLight"
+                className="wwlwl"
                 src={Light}
                 style={{
                   position: "absolute",
                   top: "-15px",
-                  right: "0px",
+                  // right: "0px",
                 }}
               />
             </Typography>

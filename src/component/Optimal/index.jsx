@@ -20,6 +20,7 @@ function Optimal() {
             display: "flex",
             justifyContent: "space-between",
             padding: "50px 0",
+            marginTop: "120px",
           }}
         >
           <Grid
@@ -100,8 +101,9 @@ function Optimal() {
               }}
             >
               <img
+                onClick={() => window.open("https://www.apple.com/app-store/")}
                 className="And"
-                style={{ width: "80%", height: "60px" }}
+                style={{ width: "80%", height: "60px", cursor: "pointer" }}
                 src={And}
               />
             </Grid>
@@ -116,8 +118,11 @@ function Optimal() {
               }}
             >
               <img
+                onClick={() =>
+                  window.open("https://play.google.com/store/games?pli=1")
+                }
                 className="And"
-                style={{ width: "80%", height: "60px" }}
+                style={{ width: "80%", height: "60px", cursor: "pointer" }}
                 src={Apple}
               />
             </Grid>
@@ -187,7 +192,7 @@ function Optimal() {
                 className="ratess"
                 style={{ fontWeight: "500", fontSize: "40px" }}
               >
-                4.9
+                50+
               </Typography>
 
               <Typography
@@ -200,12 +205,18 @@ function Optimal() {
                 className="ratess"
                 style={{ fontWeight: "500", fontSize: "40px" }}
               >
-                20k+
+                12k+
               </Typography>
             </Grid>
-            <BasicRating />
+            {/* <BasicRating /> */}
 
-            <Grid sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Grid
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "20px",
+              }}
+            >
               <Typography
                 style={{
                   fontWeight: "500",
@@ -216,7 +227,7 @@ function Optimal() {
                   marginTop: "5px",
                 }}
               >
-                Total Users
+                Corporates
               </Typography>
               <Typography
                 style={{
@@ -240,7 +251,7 @@ function Optimal() {
                   marginTop: "5px",
                 }}
               >
-                Happy Users
+                Happy Families
               </Typography>
             </Grid>
           </Grid>

@@ -37,11 +37,15 @@ function Footer() {
                 Get the app
               </Typography>
               <img
+                onClick={() =>
+                  window.open("https://play.google.com/store/games?pli=1")
+                }
                 className="footerIcon"
                 style={{ paddingBottom: "15px", width: "70%" }}
                 src={footerIcon}
               />
               <img
+                onClick={() => window.open("https://www.apple.com/app-store/")}
                 className="footerIcon"
                 style={{ width: "70%" }}
                 src={footerIcon2}
@@ -98,7 +102,7 @@ function Footer() {
               <Typography
                 sx={{ fontSize: "15px", fontFamily: "'Apercu', sans-serif" }}
               >
-                At home self blood test
+                Health Check-up
               </Typography>
             </Grid>
 
@@ -305,7 +309,7 @@ function Footer() {
                 private limited. all right reserved
               </Typography>
             </Grid>
-            <Grid item xs={6} sm={2}>
+            <Grid item xs={6} sm={1} md={2}>
               <img className="ooterlog" src={footerLogo} />
             </Grid>
             <Grid
@@ -313,6 +317,7 @@ function Footer() {
               item
               xs={10}
               sm={8}
+              md={8}
               sx={{
                 alignSelf: "center",
 
@@ -338,6 +343,7 @@ function Footer() {
               item
               xs={6}
               sm={2}
+              md={2}
               sx={{
                 alignSelf: "center",
                 display: "flex",

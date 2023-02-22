@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.cdnfonts.com/css/apercu");
 
+.logo {
+  width: 50%;
+}
+.arrr {
+  margin: 65px !important;
+}
 .driMain2 {
   display: none !important;
 }
@@ -57,6 +63,17 @@
   }
   .Visualise {
     font-size: 39px !important;
+  }
+  .wellness {
+    font-size: 32px !important;
+  }
+  .lightTwo {
+    width: 7% !important;
+    top: 50px !important;
+  }
+  .sinTwo {
+    width: 25% !important;
+    margin-right: 55px !important;
   }
   .driven {
     font-size: 34px !important;
@@ -169,8 +186,65 @@
   .restores {
     font-size: 35px !important;
   }
+  .wellness {
+    font-size: 23px !important;
+  }
+  .wo {
+    width: 170px !important;
+  }
+  .me {
+    width: 120px !important;
+  }
+  .demo {
+    width: 35% !important;
+  }
+  .arrr {
+    margin: 65px 20px !important;
+  }
 }
 @media (max-width: 576px) {
+  .driverLight {
+    margin: 0 auto !important;
+  }
+  .driven {
+    font-size: 24px !important;
+    text-align: center !important;
+  }
+  /* .exLight {
+    right: -20px !important;
+  } */
+  .wwlwl {
+    width: 10% !important;
+  }
+  .Visualise {
+    text-align: center !important;
+  }
+  .appxx {
+    width: 40% !important;
+  }
+  .logo {
+    width: 20% !important;
+  }
+  .arrr {
+    margin: 65px -10px !important;
+    width: 75% !important;
+  }
+  .yellow {
+    width: 80% !important;
+  }
+  .tenk {
+    font-size: 20px !important;
+  }
+  .trustedd {
+    font-size: 7px !important;
+    margin: 5px 0 !important;
+  }
+  .multi {
+    width: 50% !important;
+  }
+  .mainDiv {
+    margin-top: -50px !important;
+  }
   .driMain2 {
     display: block !important;
   }
@@ -250,12 +324,46 @@
   .copyrights {
     display: block !important;
   }
+  .copyright {
+    display: none !important;
+  }
   .SOCIAL {
     display: flex !important;
     justify-content: end !important;
   }
+  .wo {
+    width: 80px !important;
+  }
+  .me {
+    width: 60px !important;
+  }
+  #id {
+    display: none !important;
+  }
+  #id2 {
+    display: none !important;
+  }
+  #qw {
+    display: block !important;
+  }
+  .wellness {
+    font-size: 20px !important;
+  }
+  .sinTwo {
+    margin-right: 75px !important;
+  }
+  .rectss {
+    width: 6% !important;
+    margin-top: 0px !important;
+  }
+  .demo {
+    width: 50% !important;
+  }
 }
 @media (max-width: 500px) {
+  .exLight {
+    right: -20px !important;
+  }
   .main {
     width: 100%;
   }
@@ -335,6 +443,25 @@
 }
 
 @media (max-width: 376px) {
+  .demo {
+    width: 50% !important;
+  }
+  .tenk {
+    font-size: 10px !important;
+  }
+  .yellow {
+    margin-top: 30px !important;
+  }
+  .trustedd {
+    font-size: 5px !important;
+    margin: 5px 0 !important;
+  }
+  .tailor {
+    font-size: 11px !important;
+  }
+  .wellness {
+    font-size: 18px !important;
+  }
   .restore {
     font-size: 28px !important;
   }
@@ -365,6 +492,18 @@
   }
 }
 @media (max-width: 320px) {
+  .demo {
+    width: 65% !important;
+  }
+  .me {
+    width: 55px !important;
+  }
+  .wo {
+    width: 70px !important;
+  }
+  .wellness {
+    font-size: 15px !important;
+  }
   .restore {
     font-size: 23px !important;
   }

@@ -142,7 +142,7 @@ export default function SimpleAccordion() {
         </Accordion>
       </div>
 
-      <Grid
+      {/* <Grid
         container
         sx={{ background: "#2EB1BE", padding: "50px", borderRadius: "10px" }}
       >
@@ -163,7 +163,7 @@ export default function SimpleAccordion() {
             <img src={And} />
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 }
